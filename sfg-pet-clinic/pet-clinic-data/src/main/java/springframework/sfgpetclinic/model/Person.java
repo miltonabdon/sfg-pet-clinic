@@ -13,6 +13,12 @@ public class Person extends BaseEntity{
 		this.firstName = firstName;
 		this.lastName = lastName;
 	}
+	
+	
+	@Override
+	public String toString() {
+		return "Person [firstName=" + firstName + ", lastName=" + lastName + "]";
+	}
 
 	public String getFirstName() {
 		return firstName;

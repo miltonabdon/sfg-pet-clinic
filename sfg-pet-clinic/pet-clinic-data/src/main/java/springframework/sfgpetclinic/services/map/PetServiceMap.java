@@ -5,7 +5,6 @@ import java.util.Set;
 import org.springframework.stereotype.Service;
 
 import springframework.sfgpetclinic.model.Pet;
-import springframework.sfgpetclinic.services.CrudService;
 import springframework.sfgpetclinic.services.PetService;
 
 @Service

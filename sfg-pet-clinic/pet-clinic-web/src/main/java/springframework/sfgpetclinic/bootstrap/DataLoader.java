@@ -1,6 +1,5 @@
 package springframework.sfgpetclinic.bootstrap;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -8,8 +7,6 @@ import springframework.sfgpetclinic.model.Owner;
 import springframework.sfgpetclinic.model.Vet;
 import springframework.sfgpetclinic.services.OwnerService;
 import springframework.sfgpetclinic.services.VetService;
-import springframework.sfgpetclinic.services.map.OwnerServiceMap;
-import springframework.sfgpetclinic.services.map.VetServiceMap;
 
 @Component
 public class DataLoader implements CommandLineRunner{
@@ -49,9 +46,9 @@ public class DataLoader implements CommandLineRunner{
 		vetService.save(vet);
 		
 		Vet vet2 = new Vet();
-		vet.setId(2L);
-		vet.setFirstName("Jessie");
-		vet.setLastName("Porter");
+		vet2.setId(2L);
+		vet2.setFirstName("Jessie");
+		vet2.setLastName("Porter");
 		
 		vetService.save(vet2);
 		
