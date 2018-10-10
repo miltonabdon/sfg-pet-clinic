@@ -1,9 +1,9 @@
 package springframework.sfgpetclinic.services;
 
-import java.security.acl.Owner;
+import springframework.sfgpetclinic.model.Owner;
 
 public interface OwnerService extends CrudService<Owner, Long>{
 	
-	public Owner findByLastName();
+	public Owner findByLastName(String lastName);
 
 }
