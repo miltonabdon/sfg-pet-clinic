@@ -1,4 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: springframework.sfgpetclinic.SfgPetClinicApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.439 s - in springframework.sfgpetclinic.SfgPetClinicApplicationTests
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 8.927 s <<< FAILURE! - in springframework.sfgpetclinic.SfgPetClinicApplicationTests
+contextLoads(springframework.sfgpetclinic.SfgPetClinicApplicationTests)  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [springframework.sfgpetclinic.bootstrap.DataLoader] from ClassLoader [sun.misc.Launcher$AppClassLoader@6bc7c054]
+Caused by: java.lang.NoClassDefFoundError: Lspringframework/sfgpetclinic/services/OwnerService;
+Caused by: java.lang.ClassNotFoundException: springframework.sfgpetclinic.services.OwnerService
+
