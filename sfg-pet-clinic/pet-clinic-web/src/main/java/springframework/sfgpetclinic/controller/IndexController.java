@@ -12,5 +12,12 @@ public class IndexController {
 		
 		return "index";
 	}
+	
+	@RequestMapping("/oups")
+	public String ooops(Model model) {
+		
+		return "notimplemented";
+		
+	}
 
 }
